@@ -1,7 +1,7 @@
 
 # <div align="center">Telecom Customer Churn Prediction</div>
 
-![Intro](./output/customer%20churn.jpeg?raw=true)
+![Intro](./output/customer%20churn.jpeg)
 
 
 
@@ -38,21 +38,21 @@ To detect early signs of potential churn, one must first develop a holistic view
 ## Few glimpses of EDA:
 ### 1. Churn distribution:
 
-> ![Churn distribution](./output/Churn%20Distribution.png?raw=true)
+> ![Churn distribution](./output/Churn%20Distribution.png)
 > 26.6 % of customers switched to another firm.
 
 ### 2. Churn distribution with respect to gender:
-> ![Churn distribution wrt Gender](./output/distributionWRTGender.PNG?raw=true)
+> ![Churn distribution wrt Gender](./output/distributionWRTGender.PNG)
 
 
 > There is negligible difference in customer percentage/count who chnaged the service provider. Both genders behaved in similar fashion when it comes to migrating to another service provider/firm.`
 
 ### 3. Customer Contract distribution:
-> ![Customer contract distribution](./output/Contract%20distribution.png?raw=true)
+> ![Customer contract distribution](./output/Contract%20distribution.png)
 > About 75% of customer with Month-to-Month Contract opted to move out as compared to 13% of customrs with One Year Contract and 3% with Two Year Contract
 
 ### 4. Payment Methods:
-> ![Distribution of Payments methods](./output/payment%20methods.png?raw=true) ![Churn wrt payment methods](./output/payment%20ethods%20with%20respectto%20churn.PNG?raw=true)
+> ![Distribution of Payments methods](./output/payment%20methods.png) ![Churn wrt payment methods](./output/payment%20ethods%20with%20respectto%20churn.PNG)
 
 > Major customers who moved out were having Electronic Check as Payment Method.
 > Customers who opted for Credit-Card automatic transfer or Bank Automatic Transfer and Mailed Check as Payment Method were less likely to move out.
@@ -61,56 +61,56 @@ To detect early signs of potential churn, one must first develop a holistic view
 
 > Several customers choose the Fiber optic service and it's also evident that the customers who use Fiber optic have high churn rate, this might suggest a dissatisfaction with this type of internet service.
 > Customers having DSL service are majority in number and have less churn rate compared to Fibre optic service.
-![Churn distribution w.r.t Internet services and Gender](./output/internet%20services.PNG?raw=true)
+![Churn distribution w.r.t Internet services and Gender](./output/internet%20services.PNG)
 
 ### 6. Dependent distribution:
 
 > Customers without dependents are more likely to churn.
-![Churn distribution w.r.t dependents](./output/dependents.PNG?raw=true)
+![Churn distribution w.r.t dependents](./output/dependents.PNG)
 
 ### 7. Online Security:
 
 > As shown in following graph, most customers churn due to lack of online security
-![Churn distribution w.r.t online security](./output/onlineSecurity.PNG?raw=true)
+![Churn distribution w.r.t online security](./output/onlineSecurity.PNG)
 
 ### 8. Senior Citizen:
 
 > Most of the senior citizens churn; the number of senior citizens are very less in over all customer base.
-![Churn distribution w.r.t Senior Citizen](./output/seniorCitzen.PNG?raw=true)
+![Churn distribution w.r.t Senior Citizen](./output/seniorCitzen.PNG)
 
 ### 9. Paperless Billing:
 
 > Customers with Paperless Billing are most likely to churn.
-![Churn distribution w.r.t mode of billing](./output/billing.PNG?raw=true)
+![Churn distribution w.r.t mode of billing](./output/billing.PNG)
 
 ### 10. Tech support:
 
 > As shown in following chart, customers with no TechSupport are most likely to migrate to another service provider.
-![Churn distribution w.r.t Tech support](./output/techSupport.PNG?raw=true)
+![Churn distribution w.r.t Tech support](./output/techSupport.PNG)
 
 ### 11. Distribution w.r.t Charges and Tenure:
-> ![Monthly Charges](./output/carges%20distribution.PNG?raw=true)
-> ![Total Charges](./output/total%20charges.PNG?raw=true)
-> ![Tenure](./output/tenure%20and%20churn.PNG?raw=true)
+> ![Monthly Charges](./output/carges%20distribution.PNG)
+> ![Total Charges](./output/total%20charges.PNG)
+> ![Tenure](./output/tenure%20and%20churn.PNG)
 
 > Customers with higher Monthly Charges are also more likely to churn.<br>
 > New customers are more likely to churn.
 
 ## Machine Learning Model Evaluations and Predictions:
-![ML Algorithms](./output/Model%20evaluation.PNG?raw=true)
+![ML Algorithms](./output/Model%20evaluation.PNG)
 
 #### Results after K fold cross validation:
 
-![Logistic Regression](./output/LR.PNG?raw=true) 
-![KNN](./output/KNN.PNG?raw=true)
-![Naive Bayes](./output/Naive%20Bayes.PNG?raw=true)
-![Decision Tree](./output/Decision%20trees.PNG?raw=true)
-![Random Forest](./output/Random%20Forest.PNG?raw=true)
-![Adaboost](./output/Adaboost.PNG?raw=true)
-![Gradient Boost](./output/Gradient%20boost.PNG?raw=true)
-![Voting Classifier](./output/Voting%20Classifier.PNG?raw=true)
+![Logistic Regression](./output/LR.PNG) 
+![KNN](./output/KNN.PNG)
+![Naive Bayes](./output/Naive%20Bayes.PNG)
+![Decision Tree](./output/Decision%20trees.PNG)
+![Random Forest](./output/Random%20Forest.PNG)
+![Adaboost](./output/Adaboost.PNG)
+![Gradient Boost](./output/Gradient%20boost.PNG)
+![Voting Classifier](./output/Voting%20Classifier.PNG)
 
-![Confusion Matrix](./output/confusion_matrix_models.PNG?raw=true)
+![Confusion Matrix](./output/confusion_matrix_models.PNG)
 #### Final Model: Voting Classifier
 * We have selected Gradient boosting, Logistic Regression, and Adaboost for our Voting Classifier.
 ```
@@ -137,7 +137,7 @@ Final Score
 
 ```
 * Final confusion matrix we got:
-<img src= "./output/confusion%20matrix.PNG?raw=true" width = "425" />
+<img src= "./output/confusion%20matrix.PNG" width = "425" />
 
 >From the confusion matrix we can see that: There are total 1383+166=1549 actual non-churn values and the algorithm predicts 1400 of them as non churn and 149 of them as churn. While there are 280+280=561 actual churn values and the algorithm predicts 280 of them as non churn values and 281 of them as churn values.
 ## Optimizations
